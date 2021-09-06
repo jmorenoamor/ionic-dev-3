@@ -18,7 +18,7 @@ ENV IONIC_VERSION 3.9.2
 # Install Ionic and Cordova
 # ##################################################################################################
 RUN apt-get update && \
-    apt-get install -y --no-install-recommends curl software-properties-common unzip rsync && \
+    apt-get install -y --no-install-recommends make curl software-properties-common unzip rsync && \
     npm install -g cordova@${CORDOVA_VERSION} ionic@${IONIC_VERSION}
 
 VOLUME /usr/src/app
